@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body,
+.flex-container {
+  display: flex;
+  font-family: "Figtree", sans-serif;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #F4D04E;
+  color: #111111;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+.flex-container {
+  flex-direction: column;
+}
+
+.container {
+  gap: 24px;
+  width: 80%;
+  max-width: 384px;
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid #111111;
+  box-shadow: 8px 8px #000000;
+  background-color: #FFFFFF;
+}
+
+.blog-image img {
+  border-radius: 10px;
+}
+
+.content {
+  gap: 12px;
+}
+
+.content .tags {
+  justify-content: center;
+  align-items: center;
+  max-width: 82px;
+  height: 29px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #F4D04E;
+}
+
+.content .pub-date {
+  font-size: 14px;
+  margin-bottom: .3rem;
+}
+
+.content h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.content h1:hover {
+  color: #F4D04E;
+  cursor: pointer;
+}
+
+.content .description {
+  font-size: 16px;
+  line-height: 150%;
+  color: #6B6B6B;
+}
+
+.author {
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.author img {
+  max-width: 32px;
+  max-height: 32px;
+}
